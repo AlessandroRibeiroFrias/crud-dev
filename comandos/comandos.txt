@@ -1,0 +1,9 @@
+Apagar todas as imagens: 
+
+$ docker rmi $(docker images -q)
+
+Compilar Dockerfile: 
+
+$ docker build -t my-php-app .
+
+Subir docker-compose up
