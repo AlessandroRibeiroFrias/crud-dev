@@ -2,23 +2,19 @@
 
 ## Instalar a aplicação.
 
-Executar o seguinte comando do composer, para instalar as dependencias da aplicação.
+Executar o seguinte comando do composer, para instalar as dependências da aplicação.
 
 ```bash
 composer install
 ```
 
-Executar o comando para subir os container do Docker
+Executar o comando para subir os containers do Docker
 
 ```bash
 docker-compose up
 ```
 
-Or you can use `docker-compose` to run the app with `docker`, so you can run these commands:
-```bash
-docker-compose up -d
-```
-Após subir os container do Docker, realizar a alteração no arquivo DBConfig.php para o ip do docker, variavel self::$HOST
+Após subir os container do Docker, realizar a alteração no arquivo DBConfig.php para o ip do docker, variável self::$HOST
 ```bash
 	'crud-dev\src\Infrastructure\Connection\DBConfig.php'
 ```
