@@ -86,6 +86,8 @@ class InMemoryDevRepository implements DevRepository
             ->execute()
             ->fetch();
 
+
+
         if (!$row) {
             throw new DevNotFoundException();
         }
