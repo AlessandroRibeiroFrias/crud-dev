@@ -10,9 +10,5 @@ CREATE TABLE dev.developers(
 	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
-insert into dev.developers (nome, sexo, idade, hobby, datanascimento) values ('Alessandro Ribeiro Frias', 'M', 23, 'Gamer','1996-12-17');
-insert into dev.developers (nome, sexo, idade, hobby, datanascimento) values ('Francisco da Silva', 'M', 25, 'Pescador','1990-01-10');
-
-select * from dev.developers;
-use dev;
-SHOW TABLES;
+insert into dev.developers (nome, sexo, idade, hobby, datanascimento) values ('Developer 1', 'M', 23, 'Gamer','1996-12-17');
+insert into dev.developers (nome, sexo, idade, hobby, datanascimento) values ('Developer 2', 'M', 25, 'Pescador','1990-01-10');
