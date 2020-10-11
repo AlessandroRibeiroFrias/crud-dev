@@ -16,7 +16,7 @@ docker-compose up
 
 Após subir os container do Docker, realizar a alteração no arquivo DBConfig.php para o ip do docker, variável self::$HOST
 ```bash
-	'crud-dev\src\Infrastructure\Connection\DBConfig.php'
+crud-dev\src\Infrastructure\Connection\DBConfig.php
 ```
 
 Executar o script de banco de dados que está na raiz do projeto, para criar a base e inserir alguns registros.
