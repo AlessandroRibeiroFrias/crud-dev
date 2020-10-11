@@ -1,0 +1,31 @@
+version: '3.7'
+
+services:
+    slim:
+        image: php:7-alpine
+        build: 
+            context: .
+            dockerfile: Dockerfile
+        working_dir: /var/www/public/
+        command: php -S 0.0.0.0:8080 -t /var/www/public/
+        environment:
+            docker: "true"
+        ports:
+            - 8080:8080
+            - 443:443
+        volumes:
+            - .:/var/www
+        restart: always
+        networks:
+              - mynetwork
+    mysql_db:
+        image: mysql:5
+        environment:
+            MYSQL_ROOT_PASSWORD: examplepass
+        ports:
+            - 3306:3306
+        networks:
+            - mynetwork
+networks:
+    mynetwork:
+        driver: bridge
